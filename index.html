@@ -1,1 +1,91 @@
-Hello World
+<!DOCTYPE html>
+
+<style type="text/css">
+	body {
+	    background-color: lightblue;
+	}
+
+	/* unvisited, visited, mouse over and selected links, respectively */
+	a:link {
+		font-weight: bold;
+	  color: blue;
+	}
+	a:visited {
+	  color: AliceBlue;
+	}
+	a:hover {
+	  color: DeepSkyBlue;
+	}
+	a:active {
+	  color: blue;
+	}
+
+	.header {
+		height: 300px;
+		width: 100%;
+	}
+	
+	.photo {
+		width: 25%;
+		float: left;
+	}
+
+	.photo img {
+		width: 100%; 
+		max-width: 1600px; 
+		height: auto;
+	}
+
+	.bio {
+		float: right;
+		width: 70%;
+	}
+
+</style>
+
+<html>
+	<head>
+		<title>Pedro Valero</title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="photo">
+				<img src="photo.jpg" alt="Pedro Valero">
+			</div>
+			<div class="bio">
+				<p>
+				<b>Pedro Valero </b><br><br>
+				Since I was a kid, I enjoyed studying science and, in particular, Mathematics. Thus, I graduated in Highschool with Honors at <a href="http://www.joyfe.es/">Colegio JOYFE</a> de Madrid. Then I decided to study a Double Degree in Computer Science and Mathematics at <a href="https://www.uam.es/ss/Satellite/es/home/">Universidad Autónoma de Madrid</a> finishing my studies in May, 2016 with an average grade of 9.14/10.<br>
+				Currently, I'm a PhD student at the <a href="http://software.imdea.org/">IMDEA Software Institute</a> working on the field of Languages' Theory. 
+				<br>
+				For further details, please look at my <a href="https://pevalme.github.io/CV.pdf">CV and/or my <a href="https://github.com/pevalme">GitHub page</a>
+				</p>
+			</div>
+		</div class="header">		
+
+		<div class="publications">
+		<h2>Publications</h2>
+		<ul>
+  		<li>A Language-theoretic View on Network Protocols <a href="https://arxiv.org/abs/1610.07198">arXiv.org</a></li>
+		</ul>
+		</div>
+		<div class="software">
+			<h2>Software</h2>
+			<ul>
+				<li><a href"https://github.com/pevalme/HTTPValidator">HTTP Validator:</a> An input validator for HTTP messages that relies on recognizers for context-free and regular languages.</li>
+			</ul>
+		</div>
+		<div class="contact">
+			<h2>Contact</h2>
+			<p>
+				<a href="http://software.imdea.org">IMDEA Software Institute</a><br>
+				Edificio IMDEA Software<br>
+				Campus Montegancedo UPM<br>
+				28223-Pozuelo de Alarcón, Madrid<br>
+				Office: 342<br>
+				Telephone: +34 91-101-2202 ext 4180<br>
+				<a href="mailto:pedro.valero@imdea.org">pedro.valero@imdea.org</a>
+			</p>
+		</div>
+	</body>
+</html>
