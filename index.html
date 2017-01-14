@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 
 <style type="text/css">
+	html {
+		width: 70%;
+		margin: auto;
+	}
+
+	html * {
+	   font-size: 108%;
+	   color: #000;
+	   font-family: Arial;
+	}
+
 	body {
 	    background-color: lightblue;
 	}
 
 	/* unvisited, visited, mouse over and selected links, respectively */
-	a:link {
+	a {
 		font-weight: bold;
 	  color: blue;
 	}
-	a:visited {
-	  color: AliceBlue;
-	}
 	a:hover {
-	  color: DeepSkyBlue;
-	}
-	a:active {
-	  color: blue;
+	  color: AliceBlue;
 	}
 
 	.header {
@@ -26,6 +31,8 @@
 	}
 	
 	.photo {
+		margin: auto;
+		margin-top: 35px;
 		width: 25%;
 		float: left;
 	}
@@ -50,33 +57,33 @@
 	<body>
 		<div class="header">
 			<div class="photo">
-				<img src="photo.jpg" alt="Pedro Valero">
+				<img src="photo.jpeg" alt="Pedro Valero">
 			</div>
 			<div class="bio">
-				<p>
+				<p align="justify">
 				<b>Pedro Valero </b><br><br>
 				Since I was a kid, I enjoyed studying science and, in particular, Mathematics. Thus, I graduated in Highschool with Honors at <a href="http://www.joyfe.es/">Colegio JOYFE</a> de Madrid. Then I decided to study a Double Degree in Computer Science and Mathematics at <a href="https://www.uam.es/ss/Satellite/es/home/">Universidad Autónoma de Madrid</a> finishing my studies in May, 2016 with an average grade of 9.14/10.<br>
 				Currently, I'm a PhD student at the <a href="http://software.imdea.org/">IMDEA Software Institute</a> working on the field of Languages' Theory. 
 				<br>
-				For further details, please look at my <a href="https://pevalme.github.io/CV.pdf">CV and/or my <a href="https://github.com/pevalme">GitHub page</a>
+				For further details, please look at my <a href="https://pevalme.github.io/CV.pdf">CV</a> and/or my <a href="https://github.com/pevalme">GitHub page</a>
 				</p>
 			</div>
 		</div class="header">		
 
 		<div class="publications">
-		<h2>Publications</h2>
+		<h1>Publications</h1>
 		<ul>
   		<li>A Language-theoretic View on Network Protocols <a href="https://arxiv.org/abs/1610.07198">arXiv.org</a></li>
 		</ul>
 		</div>
 		<div class="software">
-			<h2>Software</h2>
+			<h1>Software</h1>
 			<ul>
-				<li><a href"https://github.com/pevalme/HTTPValidator">HTTP Validator:</a> An input validator for HTTP messages that relies on recognizers for context-free and regular languages.</li>
+				<li><a href="https://github.com/pevalme/HTTPValidator">HTTP Validator:</a> An input validator for HTTP messages that relies on recognizers for context-free and regular languages.</li>
 			</ul>
 		</div>
 		<div class="contact">
-			<h2>Contact</h2>
+			<h1>Contact</h1>
 			<p>
 				<a href="http://software.imdea.org">IMDEA Software Institute</a><br>
 				Edificio IMDEA Software<br>
