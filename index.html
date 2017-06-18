@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
+<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
 <html>
 	<style type="text/css">
 		html {
-			width: 80%;
+			width: 60%;
 			margin: auto;
+			min-width: 1000px;
 		}
 
 		html * {
-		   font-size: 108%;
+		   font-size: 104%;
 		   color: #000;
 		   font-family: Arial;
 		}
@@ -27,29 +28,33 @@
 
 		.header {
 			min-height: 300px;
-			float: left;
-			width: 100%;
+			min-width: 800px;
+			display: block;
+			margin: auto;
+			width: 65%;
 		}
 		
 		.photo {
 			margin: auto;
 			margin-top: 35px;
-			margin-right: 40px;
-			width: 25%;
+			width: 40%;
 			float: left;
 		}
 
 		.photo img {
 			width: 100%; 
-			max-width: 400px; 
-			min-width: 200px;
+			max-width: 500px; 
+			min-width: 400px;
 			height: auto;
 		}
 
-		.bio {
-			float: left;
-			width: 70%;
-			min-width: 700px
+		.contact {
+			float: right;
+			width: 40%;
+			font-size: 95%;
+			margin: auto;
+			margin-top: 5%;
+			margin-left: 10%;
 		}
 
 		.publications {
@@ -60,7 +65,7 @@
 			float: left;
 		}
 
-		.contact {
+		.bio {
 			float: left;
 		}
 
@@ -69,8 +74,17 @@
 		  margin-top: 40px;
 		  margin-bottom: 40px;
 		  padding-bottom: 5px;
-		  border-bottom: 1px solid #cccccc;
-		  color: gray;
+		  border-bottom: 1px solid #0080FF;
+		  color: #0080FF;
+		}
+
+		div {
+			width: 100%;
+		}
+
+		h2 {
+			font-size: 190%;
+		  color: #0080FF;
 		}
 
 	</style>
@@ -82,21 +96,31 @@
 			<div class="photo">
 				<img src="https://pevalme.github.io/photo.jpeg" alt="Pedro Valero">
 			</div>
-			<div class="bio">
-				<p align="justify">
-				<b>Pedro Valero </b><br><br>
-				From a young age, I have enjoyed studying science and, in particular, Mathematics. After graduating Highschool with honors, this led me to study a Double Degree in Computer Science and Mathematics at <a href="https://www.uam.es/ss/Satellite/es/home/">Universidad Autónoma de Madrid</a>, finalising my studies in May, 2016 with an average grade of 9.14/10.<br>
-				Currently, I am a PhD student at the <a href="http://software.imdea.org/">IMDEA Software Institute</a> working on Languages' Theory. 
-				<br>
-				Further details can be found on my <a href="https://pevalme.github.io/CV.pdf">CV</a> and/or my <a href="https://github.com/pevalme">GitHub page</a>
+			<div class="contact">
+			<h2>PEDRO VALERO</h2>
+				<p>
+					<a href="http://software.imdea.org">IMDEA Software Institute</a><br>
+					Edificio IMDEA Software<br>
+					Campus Montegancedo UPM<br>
+					28223-Pozuelo de Alarcón, Madrid<br>
+					<i><b>Office</b></i>: 342<br>
+					<i><b>Phone</b></i>: +34 91-101-2202 ext 4180<br>
+					<i><b>mail</b></i>: <a href="mailto:pedro.valero@imdea.org">pedro.valero@imdea.org</a>
 				</p>
 			</div>
 		</div class="header">		
-
+		<div class="bio">
+		<h1> About Me </h1>
+			From a young age, I have enjoyed studying science and, in particular, Mathematics. After graduating Highschool with honors, this led me to study a Double Degree in Computer Science and Mathematics at <a href="https://www.uam.es/ss/Satellite/es/home/">Universidad Autónoma de Madrid</a>, finalising my studies in May, 2016 with an average grade of 9.14/10.<br>
+			Currently, I am a PhD student at the <a href="http://software.imdea.org/">IMDEA Software Institute</a> working on Languages' Theory. 
+			Further details can be found on my <a href="https://pevalme.github.io/CV.pdf">CV</a> and/or my <a href="https://github.com/pevalme">GitHub page</a>
+			</p>
+		</div>
 		<div class="publications">
 		<h1>Publications</h1>
 		<ul>
-  		<li>ATVA 2017: A Language-theoretic View on Network Protocols. Preliminary version available at <a href="https://arxiv.org/abs/1610.07198">arXiv.org</a></li>
+  		<li>ATVA 2017: <i>A Language-theoretic View on Network Protocols</i> with Pierre Ganty and Boris Köpf.<br>
+  		Preliminary version available at <a href="https://arxiv.org/abs/1610.07198">arXiv.org</a></li>
 		</ul>
 		</div>
 		<div class="software">
@@ -105,17 +129,6 @@
 				<li><a href="https://github.com/pevalme/HTTPValidator">HTTP Validator:</a> An input validator for HTTP messages that relies on recognizers for context-free and regular languages.</li>
 			</ul>
 		</div>
-		<div class="contact">
-			<h1>Contact</h1>
-			<p>
-				<a href="http://software.imdea.org">IMDEA Software Institute</a><br>
-				Edificio IMDEA Software<br>
-				Campus Montegancedo UPM<br>
-				28223-Pozuelo de Alarcón, Madrid<br>
-				Office: 342<br>
-				Telephone: +34 91-101-2202 ext 4180<br>
-				<a href="mailto:pedro.valero@imdea.org">pedro.valero@imdea.org</a>
-			</p>
-		</div>
+		
 	</body>
 </html>
