@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{anysize}
+\marginsize{0cm}{0cm}{2cm}{2cm}
+
+\usepackage{textcomp}
+%\usepackage{fontspec} % For loading fonts
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{2pt}{2pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr8]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge \textsc{Pedro Valero}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Spain  | 10 July 1993 \\
+\textsc{Address:} & Madrid, Spain \\
+\textsc{Phone:} & +034 653 054 056\\
+\textsc{email:} & \href{mailto:pedro.valero.mejia@gmail.com}{pedro.valero.mejia@gmail.com} \\
+\textsc{GitHub:} & \href{https://github.com/pevalme}{pevalme}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+%\emph{Current} & 1\textsuperscript{st} year PhD Candidate at IMDEA Software Institute. \\
+\textsc{Sep 2016-Current} & \emph{PhD at IMDEA Software Institute}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2015-May 2016} & \emph{Internship at IMDEA Software Institute}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jun-Sep 2015} & \emph{Internship at Max Planck Institute}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2014-Apr 2015} & \emph{Internship at IMDEA Software Institute}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Jun-Sep 2014} & \emph{Internship at IMDEA Software Institute}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\begin{tabular}{rl}
+\textsc{ATVA} 2017 & \textsc{A Language-Theoretic View on Network Protocols} \\
+& \textit{with Pierre Ganty and Boris Köpf} \\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{tabular}{rl}
+
+\textsc{May} 2016 & \textsc{Double degree at Compute Science and Maths}\\
+& at \textbf{Universidad Autónoma de Madrid} \\
+& \normalsize \textsc{gpa}: 9.14/10 \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{tabular}{rl}
+
+Four consecutive \textsc{Excellence Grants} for my Bachelor's results from 2011 to 2015. \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{English:} & Fluent\\
+
+\textsc{Spanish:} & Mother tongue\\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SOFTWARE
+%----------------------------------------------------------------------------------------
+
+\section{Software}
+
+\begin{tabular}{rp{11cm}}
+HTTValidator: & an input validator for HTTP messages that relies on recognizers for context-free and regular languages (implemented using Bison and Flex respectively) to perform the validation. Publicly available on GitHub. \\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
