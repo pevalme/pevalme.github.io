@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html>
 	<style type="text/css">
 		html {
@@ -9,7 +9,7 @@
 		}
 
 		html * {
-		   font-size: 104%;
+		   font-size: 15pt;
 		   color: #000;
 		   font-family: Arial;
 		}
@@ -18,18 +18,18 @@
 		    background-color: lightblue;
 		}
 
-		a {
+		a:not(.icon) {
 			font-weight: bold;
 			text-decoration: none;
-		  color: blue;
+			color: blue;
 		}
-		a:hover {
-		  color: AliceBlue;
+		a:not(.icon):hover {
+			color: AliceBlue;
 		}
 
 		.header {
 			min-height: 300px;
-			min-width: 800px;
+			min-width: 1000px;
 			display: block;
 			margin: auto;
 			width: 65%;
@@ -52,9 +52,10 @@
 		.contact {
 			float: right;
 			width: 40%;
-			font-size: 95%;
+			min-width: 250px;
+			font-size: 15pt;
 			margin: auto;
-			margin-top: 5%;
+			margin-top: 10pt;
 			margin-left: 10%;
 		}
 
@@ -66,17 +67,21 @@
 			float: left;
 		}
 
+		.grants {
+			float: left;
+		}
+
 		.bio {
 			float: left;
 		}
 
 		h1 {
 			font-size: 160%;
-		  margin-top: 40px;
-		  margin-bottom: 40px;
-		  padding-bottom: 5px;
-		  border-bottom: 1px solid #0080FF;
-		  color: #0080FF;
+			margin-top: 40px;
+			margin-bottom: 40px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid #0080FF;
+			color: #0080FF;
 		}
 
 		div {
@@ -85,9 +90,36 @@
 
 		h2 {
 			font-size: 190%;
-		  color: #0080FF;
+		  	color: #0080FF;
 		}
 
+		.fa {
+			padding: 7px;
+			font-size: 25px;
+			width: 25px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 40%;
+		}
+
+		.fa:hover {
+			opacity: 0.7;
+		}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+		}
+
+		.fa-linkedin {
+			background: #007bb5;
+			color: white;
+		}
+
+		.fa-github {
+			background: #125688;
+			color: white;
+		}
 	</style>
 	<head>
 		<title>Pedro Valero</title>
@@ -106,14 +138,17 @@
 					28223-Pozuelo de Alarcón, Madrid<br>
 					<i><b>Office</b></i>: 342<br>
 					<i><b>Phone</b></i>: +34 91-101-2202 ext 4180<br>
-					<i><b>mail</b></i>: <a href="mailto:pedro.valero@imdea.org">pedro.valero@imdea.org</a>
+					<i><b>mail</b></i>: <a href="mailto:pedro.valero@imdea.org">pedro.valero@imdea.org</a><br>
+					<a href="https://github.com/pevalme" class="fa fa-github icon"></a>
+					<a href="https://www.linkedin.com/in/pevalme/" class="fa fa-linkedin icon"></a>
+					<a href="https://www.facebook.com/pedro.valeromejia" class="fa fa-facebook icon"></a>
 				</p>
 			</div>
 		</div class="header">
 		<div class="bio">
 		<h1> About Me </h1>
 			From a young age, I have enjoyed studying science and, in particular, Mathematics. This led me to study a Double Degree in Computer Science and Mathematics at Universidad Autónoma de Madrid, finalizing my studies in May, 2016.<br>
-			Currently, I am a PhD student at the IMDEA Software Institute working on Languages' Theory and its relation with parallel computing.
+			Currently, I am a PhD student at the IMDEA Software Institute working on different problems related to Automata and Language Theory with focus on practical applications.
 			Further details can be found on my <a href="https://pevalme.github.io/CV.pdf">CV</a> and/or my <a href="https://github.com/pevalme">GitHub page</a>
 			</p>
 		</div>
@@ -128,6 +163,12 @@
 			<h1>Software</h1>
 			<ul>
 				<li><a href="https://github.com/pevalme/HTTPValidator">HTTP Validator:</a> An input validator for HTTP messages that relies on recognizers for context-free and regular languages.</li>
+			</ul>
+		</div>
+		<div class="grants">
+			<h1>Grants</h1>
+			<ul>
+				<li><a href="https://www.daad.de/deutschland/stipendium/en/">DAAD</a> Research Grant for a four-months stay at the Technische Universität München (TUM).</li>
 			</ul>
 		</div>
 
