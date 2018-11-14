@@ -26,7 +26,7 @@
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 
 \usepackage{anysize}
-\marginsize{0cm}{0cm}{2cm}{2cm}
+\marginsize{0cm}{0cm}{1cm}{1cm}
 
 \usepackage{textcomp}
 %\usepackage{fontspec} % For loading fonts
@@ -37,7 +37,8 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage{fullpage}
+% \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
@@ -45,7 +46,7 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\bfseries\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{2pt}{2pt} % Spacing around sections
 
 \begin{document}
@@ -76,8 +77,8 @@
 
 \section{Publications}
 \begin{tabular}{rl}
-\textsc{Submitted} 2018 & \textsc{Regular Expression Matching on Compressed Text} \\
- & \textit{with Pierre Ganty}
+\textsc{Submitted} 2018 & \textsc{Regular Expression Searching on Compressed Text} \\
+ & \textit{with Pierre Ganty} \\
 \textsc{ATVA} 2017 & \textsc{A Language-Theoretic View on Network Protocols} \\
 & \textit{with Pierre Ganty and Boris Köpf} \\
 \end{tabular}
@@ -89,7 +90,9 @@
 \section{Software}
 
 \begin{tabular}{rp{11cm}}
-\textsc{HTTValidator}: & An input validator for HTTP messages that relies on recognizers for context-free and regular languages (implemented using Bison and Flex respectively) to perform the validation. Publicly available on GitHub. \\
+\textsc{HTTValidator}: & An input validator for HTTP messages that relies on recognizers for context-free and regular languages (implemented using Bison and Flex respectively) to perform the validation. Publicly available on \href{https://github.com/pevalme/HTTPValidator}{GitHub}. \\
+
+\textsc{Zearch}: & A tool for regular expression searching on grammar-compressed text (implemented in C). Publicly available on \href{https://github.com/pevalme/zearch}{GitHub}.\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -99,7 +102,7 @@
 \section{Research Stays}
 
 \begin{tabular}{rp{13cm}}
-\textsc{2018}: & Four months stay at Technische Universität München, in the Chair for Foundations of Software Reliability and Theoretical Computer Science with Prof. Javier Esparza. \\
+\textsc{2018}: & Four months stay at Technische Universität München, in the Chair for Foundations of Software Reliability and Theoretical Computer Science with Prof. Javier Esparza. 
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -108,19 +111,29 @@
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{11cm}}
+\begin{tabular}{rp{11cm}}
 %\emph{Current} & 1\textsuperscript{st} year PhD Candidate at IMDEA Software Institute. \\
-\textsc{Sep 2016-Current} & \emph{PhD at IMDEA Software Institute}\\
-\multicolumn{2}{c}{} \\
+\textsc{Sep 2016-Current}: & PhD at IMDEA Software Institute\\
+% \multicolumn{2}{c}{} \\
 
-\textsc{Sep 2015-May 2016} & \emph{Internship at IMDEA Software Institute}\\
-\multicolumn{2}{c}{} \\
+\textsc{Sep 2015-May 2016}: & Internship at IMDEA Software Institute\\
+% \multicolumn{2}{c}{} \\
 
-\textsc{Jun-Sep 2015} & \emph{Internship at Max Planck Institute}\\
-\multicolumn{2}{c}{} \\
+\textsc{Jun-Sep 2015}: & Internship at Max Planck Institute\\
+% \multicolumn{2}{c}{} \\
 
-\textsc{Jun 2014-Apr 2015} & \emph{Internship at IMDEA Software Institute}\\
-\multicolumn{2}{c}{} \\
+\textsc{Jun 2014-Apr 2015}: & Internship at IMDEA Software Institute\\
+% \multicolumn{2}{c}{} 
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMITTEES
+%----------------------------------------------------------------------------------------
+
+\section{Committees}
+\begin{tabular}{rl}
+
+\textsc{TACAS} 2019: & Member of the Artifact Evaluation Committee
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -130,9 +143,9 @@
 \section{Education}
 \begin{tabular}{rl}
 
-\textsc{May} 2016 & \textsc{Double degree at Compute Science and Maths}\\
+\textsc{May} 2016: & \textsc{Double degree at Compute Science and Maths}\\
 & at \textbf{Universidad Autónoma de Madrid} \\
-& \normalsize \textsc{gpa}: 9.14/10 \\
+& \normalsize \textsc{gpa}: 9.14/10.0 - 3.05/4.0\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -143,9 +156,9 @@
 
 \begin{tabular}{rl}
 
-\textsc{2011-2015} & Four consecutive \emph{Excellence Award} for my academic performance. \\
+\textsc{2018}: & Short-Term \emph{DAAD Scholarship}. \\
 
-\textsc{2018} & Short-Term \emph{DAAD Scholarship}. \\
+\textsc{2011-2015}: & Four consecutive \emph{Excellence Award} for my academic performance. \\
 
 \end{tabular}
 
