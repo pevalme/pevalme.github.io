@@ -25,10 +25,10 @@
 
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 
-\usepackage{anysize}
-\marginsize{0cm}{0cm}{1cm}{1cm}
-
 \usepackage{textcomp}
+
+\usepackage[T1]{fontenc}
+
 %\usepackage{fontspec} % For loading fonts
 %\defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
@@ -36,7 +36,8 @@
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-
+\definecolor{azureblue}{rgb}{0.0, 0.5, 1.0}
+\definecolor{battleshipgrey}{rgb}{0.47, 0.5, 0.8}
 \usepackage{fullpage}
 % \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
@@ -46,14 +47,15 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\bfseries\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\bfseries\large\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{2pt}{2pt} % Spacing around sections
+\setlength{\titlewidth}{\textwidth}
 
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
 
-\font\fb=''[cmr8]'' % Change the font of the \LaTeX command under the skills section
+
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
@@ -69,12 +71,78 @@
 \textsc{webpage:} & \href{https://pevalme.github.io/}{https://pevalme.github.io/}\\
 \end{tabular}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+%\emph{Current} & 1\textsuperscript{st} year PhD Candidate at IMDEA Software Institute. \\
+July 2019 & \textbf{Facebook} (Palo Alto, California) \\
+October 2019 & \textcolor{azureblue}{\textbf{Research Intern at the Data Compression Team}} \hfill Manager: \emph{Yann Collet}. \\
+& During this internship, I analyzed the strengths of grammar-based compression and its applicability within the next generation of data compressors.
+In order to perform this analysis, I built a prototype of a grammar-based compressor in C.
+\end{tabular}
+
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+September 2016 & \textbf{IMDEA Software Institute} (Madrid, Spain) \\
+Current & \textcolor{azureblue}{\textbf{PhD Student}}\hfill Manager: \emph{Pierre Ganty}\\
+
+& My PhD is focused on Applications of Language Theory.
+Some of the most relevant projects I have worked on as part of my PhD are:\\
+[3pt]
+& \textcolor{battleshipgrey}{\textbf{Searching on Compressed Text}} \\
+[2pt]
+& We studied the problem of searching with regular expressions on compressed text without decompression. We devised a simple technique that speeds up the search by using the information about repetitions on the text highlighted by the compressor.
+We implemented a tool,\emph{zearch}, for counting the number of lines matching the expression which outperforms the state of the art.
+The results were published at the \emph{Data Compression Conference}. \\
+[3pt]
+& \textcolor{battleshipgrey}{\textbf{Automata Minimization}} \\
+[2pt]
+& We defined a framework of automata constructions based on equivalences over words that unifies the different existing techniques for automata minimization.
+The most relevant aspect of this work is that our framework offers a new explanation for the Brzozowski's algorithm, which was previously considered as orthogonal to the rest of algorithms.
+This work was published at the \emph{Mathematical Foundations of Computer Science} conference
+\end{tabular}
+
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+September 2015 & \textbf{IMDEA Software Institute} (Madrid, Spain) \\
+May 2016 & \textcolor{azureblue}{\textbf{Part-time Intern}} \hfill Manager: \emph{Pierre Ganty} \\
+& During this internship, we studied whether different idioms, common among network protocols, could be validated by using parser generators for context-free languages.
+We implemented a modular, robust, and efficient input validator for HTTP relying on context-free grammars and regular expressions.
+We published the obtained results at the ATVA conference. 
+\end{tabular}
+
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+June 2015 & \textbf{Max Planck Institute for Software Systems} (Kaiserslautern, Germany) \\
+September 2015 & \textcolor{azureblue}{\textbf{Intern}} \hfill Manager: \emph{Rupak Majumdar} \\
+& We used the \href{https://www.ros.org/}{Robot Operative System} to simulate a robot which was controlled by a combination of voice commands and hand gestures (captured with a \href{https://www.leapmotion.com/}{Leap Motion} device).
+I designed and implemented a system to handle the given commands and execute them according to their priorities.
+\end{tabular}
+
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+June 2014 & \textbf{IMDEA Software Institute} (Madrid, Spain) \\
+May 2015 & \textcolor{azureblue}{\textbf{Intern}} \hfill Manager: \emph{Pierre Ganty}\\
+& The goal of this project was to update the tool \href{https://github.com/pierreganty/mist/wiki}{mist}, a safety checker for Petri Nets and extensions implemented by my supervisor Pierre Ganty.
+In particular, I implemented new python scripts to better test and benchmark the tool and I also used the JavaScript library D3 to improve the presentation of the results. 
+\end{tabular}
+
+\section{Software}
+
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+\textsc{HTTValidator} & An input validator for HTTP messages that relies on recognizers for context-free and regular languages (implemented using Bison and Flex respectively) to perform the validation. Publicly available on \href{https://github.com/pevalme/HTTPValidator}{GitHub}. \\
+
+\textsc{Zearch} & A tool for regular expression searching on grammar-compressed text (implemented in C). Publicly available on \href{https://github.com/pevalme/zearch}{GitHub}.\\
+\end{tabular}
+
+\section{Programming Skills}
+\begin{tabular}{p{2.6cm}p{12.5cm}}
+\textsc{Languages} & {\Large\textcolor{battleshipgrey}{\textbf{Advanced:}} C, Python, \LaTeX}.\\
+[1pt]
+& {\large\textcolor{battleshipgrey}{\textbf{Medium}}: C++, Java, Bash, Awk, JavaScript, PHP, HTML, CSS}.\\
+& \textcolor{battleshipgrey}{\textbf{Basic}}: R, SQL, Assembly, Lisp, Prolog.\\
+[3pt]
+\textsc{Software} & Linux, Sublime Text, Git, Gitlab, svn, mercurial, Zsh.\\
+\end{tabular}
 
 \section{Publications}
-\begin{tabular}{rl}
+\begin{tabular}{p{2.6cm}p{12.5cm}}
 \textsc{SAS} 2019 & \textsc{Complete Abstractions for Checking Language Inclusion} \\
 & \textit{with Francesco Ranzato and Pierre Ganty}. \\
 \textsc{MFCS} 2019 & \textsc{A Congruence-based Perspective on Automata Minimization Algorithms} \\
@@ -85,90 +153,18 @@
 & \textit{with Pierre Ganty and Boris Köpf}. \\
 \end{tabular}
 
-%----------------------------------------------------------------------------------------
-%	SOFTWARE
-%----------------------------------------------------------------------------------------
-
-\section{Software}
-
-\begin{tabular}{rp{11cm}}
-\textsc{HTTValidator}: & An input validator for HTTP messages that relies on recognizers for context-free and regular languages (implemented using Bison and Flex respectively) to perform the validation. Publicly available on \href{https://github.com/pevalme/HTTPValidator}{GitHub}. \\
-
-\textsc{Zearch}: & A tool for regular expression searching on grammar-compressed text (implemented in C). Publicly available on \href{https://github.com/pevalme/zearch}{GitHub}.\\
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	Stays
-%----------------------------------------------------------------------------------------
-
-\section{Research Stays}
-
-\begin{tabular}{rp{13cm}}
-\textsc{Feb-Jun 2018}: & Four months stay at Technische Universität München, in the Chair for Foundations of Software Reliability and Theoretical Computer Science with Prof. Javier Esparza. \\
-
-\textsc{Jul-Nov 2018}: & Four months internship at Facebook (MPK, California) on the Data Compression Team with Yann Collet. During this time I analyzed the strengths of grammar-based compression and its applications within the next generation of data compressors.
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Work Experience}
-
-\begin{tabular}{rp{11cm}}
-%\emph{Current} & 1\textsuperscript{st} year PhD Candidate at IMDEA Software Institute. \\
-\textsc{Jul 2019-Nov 2019}: & PhD Internship at Facebook Inc.\\
-
-\textsc{Sep 2016-Current}: & PhD Student at IMDEA Software Institute.\\
-% \multicolumn{2}{c}{} \\
-
-\textsc{Sep 2015-May 2016}: & Internship at IMDEA Software Institute.\\
-% \multicolumn{2}{c}{} \\
-
-\textsc{Jun-Sep 2015}: & Internship at Max Planck Institute for Software Systems.\\
-% \multicolumn{2}{c}{} \\
-
-\textsc{Jun 2014-Apr 2015}: & Internship at IMDEA Software Institute.\\
-% \multicolumn{2}{c}{} 
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	COMITTEES
-%----------------------------------------------------------------------------------------
-
 \section{Committees}
-\begin{tabular}{rl}
-\textsc{ATVA} 2019: & Member of the Artifact Evaluation Committee. \\
-\textsc{TACAS} 2019: & Member of the Artifact Evaluation Committee.
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+As a PhD student I have contributed to the organization of the \textsc{ATVA'19} and \textsc{TACAS'19} conferences as a member of the \emph{Artifact Evaluation Committee}. 
+The goal of these committees is to check consistency and replicability of results presented in submitted papers as well as evaluating their completeness, documentation and ease of use.
 
 \section{Education}
 \begin{tabular}{rl}
-
-2011 - 2016: & \textsc{Double degree at Computer Science and Mathematics}\\
+2016 - 2020 & \textsc{PhD in Software, Systems and Computing} \\
+& at \textbf{Universidad Politécnica de Madrid}\\
+\\
+2011 - 2016 & \textsc{Double degree at Computer Science and Mathematics}\\
 & at \textbf{Universidad Autónoma de Madrid} \\
-& \normalsize \textsc{gpa}: 9.14/10.0\\
+& Obtained four consecutive \emph{Excellence Awards} for academic performance. \\
+& \normalsize \textsc{gpa}: 9.14/10.0
 \end{tabular}
-
-%----------------------------------------------------------------------------------------
-%	GRANTS
-%----------------------------------------------------------------------------------------
-
-\section{Scholarships}
-
-\begin{tabular}{rl}
-
-\textsc{2018}: & Short-Term \emph{DAAD Scholarship}. \\
-
-\textsc{2011-2015}: & Four consecutive \emph{Excellence Awards} for academic performance. \\
-
-\end{tabular}
-
-
-%----------------------------------------------------------------------------------------
-
 \end{document}
