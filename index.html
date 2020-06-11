@@ -9,7 +9,7 @@
 		}
 
 		html * {
-		   font-size: 13pt;
+		   font-size: 12pt;
 		   color: #000;
 		   font-family: Arial;
 		}
@@ -60,6 +60,17 @@
 			height: auto;
 		}
 
+		.dots {
+			float: right;
+			width: 100%;
+			text-align: center;
+			min-width: 250px;
+			font-size: 15pt;
+			margin: auto;
+			margin-top: 0pt;
+			margin-left: 10%;
+		}
+
 		.contact {
 			float: right;
 			width: 100%;
@@ -95,7 +106,7 @@
 		}
 
 		h1 {
-			font-size: 130%;
+			font-size: 120%;
 			margin-top: 10px;
 			margin-bottom: 20px;
 			padding-bottom: 5px;
@@ -108,17 +119,17 @@
 		}
 
 		h2 {
-			font-size: 140%;
+			font-size: 130%;
 		  	color: #0080FF;
 		}
 
 		.fa {
 			padding: 7px;
-			font-size: 25px;
-			width: 25px;
+			font-size: 18px;
+			width: 18px;
 			text-align: center;
 			text-decoration: none;
-			border-radius: 40%;
+			border-radius: 30%;
 		}
 
 		.fa:hover {
@@ -141,18 +152,113 @@
 		}
 
 		.fa-file-pdf-o {
-			font-size: 20px;
+			font-size: 15px;
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 12px;
+		  width: 12px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
 		}
 
 	</style>
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("photo");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
 	<head>
 		<title>Pedro Valero</title>
 	</head>
 	<body>
 		<div class="header">
-			<div class="photo">
-				<img src="https://pevalme.github.io/photo.jpeg" alt="Pedro Valero">
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="photo">
+			    <img onclick="plusSlides(1)" src="https://pevalme.github.io/photo.jpeg">
+			  </div>
+
+			  <div class="photo" style="display: none">
+			    <img onclick="plusSlides(1)" src="file:///home/pedro/Documents/pevalme.github.io/wedding.jpg">
+			  </div>
+
+			  <div class="photo" style="display: none">
+			    <img onclick="plusSlides(1)" src="file:///home/pedro/Documents/pevalme.github.io/spartan.jpg">
+			  </div>
 			</div>
+
+			<!-- The dots/circles -->
+			<div class="dots">
+			  <span class="dot active" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+
 			<div class="contact">
 			<h2>PEDRO VALERO</h2>
 				<p>
@@ -218,6 +324,7 @@
 			<ul>
 				<li><a href="https://conf.researchr.org/track/etaps-2019/tacas-2019-papers#Artifact-Evaluation">TACAS 2019</a> Member of the <i>Artifact Evaluation Committee</i>.
 				<li><a href="http://atva2019.iis.sinica.edu.tw/organization/">ATVA 2019</a> Member of the <i>Artifact Evaluation Committee</i>.
+				<li><a href="https://conf.researchr.org/home/sas-2020">SAS 2020</a> Member of the <i>Artifact Evaluation Committee</i>.
 			</ul>
 		</div>
 	</body>
