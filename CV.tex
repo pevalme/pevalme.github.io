@@ -52,7 +52,7 @@
 \usepackage[a4paper, top=2cm, bottom=2cm, left=2.2cm, right=2.2cm]{geometry}
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\bfseries\large\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{2pt}{2pt} % Spacing around sections
+\titlespacing{\section}{0pt}{10pt}{2pt} % Spacing around sections
 
 \setlength{\titlewidth}{\textwidth}
 
@@ -71,7 +71,7 @@
 \section{Personal Data}
 
 \begin{tabular}{rl}
-\textsc{Phone:} & +34 653 05 40 56\\
+\textsc{Phone:} & +44 7741 767 126\\
 \textsc{email:} & \href{mailto:pedro.valero.mejia@gmail.com}{pedro.valero.mejia@gmail.com} \\
 \textsc{webpage:} & \href{https://pevalme.github.io/}{https://pevalme.github.io/}\\
 \end{tabular}
@@ -79,7 +79,13 @@
 \section{Work Experience}
 
 \begin{tabular}{p{2.5cm}p{13.2cm}}
-%\emph{Current} & 1\textsuperscript{st} year PhD Candidate at IMDEA Software Institute. \\
+{\small September 2020} & \textbf{Facebook} (London, United Kingdom) \\
+{\small Current} & \textcolor{azureblue}{\textbf{Product Engineer}} \hfill  \\
+& We develop, analyze and maintain the infrastructure required for ads that allow users to open a conversation on WhatsApp.
+As a Product Engineer, my work involves full stack development, carring out the required changes in the backend and the UI for each of the features that I develop.
+\end{tabular}
+
+\begin{tabular}{p{2.5cm}p{13.2cm}}
 {\small July 2019} & \textbf{Facebook} (Palo Alto, California) \\
 {\small October 2019} & \textcolor{azureblue}{\textbf{Research Intern at the Data Compression Team}} \hfill Manager: \emph{Yann Collet} \\
 & We analyzed the strengths of grammar-based compression to understand how it could be used within the next generation of data compressors.
@@ -87,8 +93,8 @@ In order to perform this analysis, I built a prototype (in \emph{C}) of a gramma
 \end{tabular}
 
 \begin{tabular}{p{2.5cm}p{13.2cm}}
-{\small September 2016} & \textbf{IMDEA Software Institute} (Madrid, Spain) \\{\small 
-Current} & \textcolor{azureblue}{\textbf{PhD Student}}\hfill Manager: \emph{Pierre Ganty}\\
+{\small September 2016} & \textbf{IMDEA Software Institute} (Madrid, Spain) \\
+{\small September 2020} & \textcolor{azureblue}{\textbf{PhD Student}}\hfill Manager: \emph{Pierre Ganty}\\
 
 & My PhD is focused on Applications of Language Theory.
 Some of the most relevant projects I have worked on as part of my PhD are:\\
@@ -112,7 +118,7 @@ This work was published at the \emph{Mathematical Foundations of Computer Scienc
 {\small May 2016} & \textcolor{azureblue}{\textbf{Part-time Intern}} \hfill Manager: \emph{Pierre Ganty} \\
 & During this internship, we studied whether different idioms, common among network protocols, could be validated with parser generators for context-free languages.
 We implemented (with \emph{flex} and \emph{bison}) a modular, robust, and efficient input validator for HTTP relying on context-free grammars and regular expressions.
-We published the obtained results at the \emph{Automated Technology for Verification and Analysis} conference. 
+We published the obtained results at the \emph{Automated Technology for Verification and Analysis} conference.
 \end{tabular}
 
 \begin{tabular}{p{2.5cm}p{13.2cm}}
@@ -126,7 +132,7 @@ I designed and implemented a system to handle the given commands and execute the
 {\small June 2014} & \textbf{IMDEA Software Institute} (Madrid, Spain) \\
 {\small May 2015} & \textcolor{azureblue}{\textbf{Intern}} \hfill Manager: \emph{Pierre Ganty}\\
 & The goal of this project was to update the tool \href{https://github.com/pierreganty/mist/wiki}{mist}, a safety checker for Petri Nets and extensions developed by my supervisor, Pierre Ganty.
-In particular, I implemented new \emph{Python} scripts to better test and benchmark the tool and improved the presentation of the results by using the \emph{JavaScript} library \href{https://d3js.org/}{\emph{D3}}. 
+In particular, I implemented new \emph{Python} scripts to better test and benchmark the tool and improved the presentation of the results by using the \emph{JavaScript} library \href{https://d3js.org/}{\emph{D3}}.
 \end{tabular}
 
 \section{Software}
@@ -139,7 +145,7 @@ In particular, I implemented new \emph{Python} scripts to better test and benchm
 
 \section{Programming Skills}
 \begin{tabular}{p{2.5cm}p{13.2cm}}
-\small{Languages} & \textcolor{azureblue}{\textbf{Advanced:}} C, Python, \LaTeX.\\
+\small{Languages} & \textcolor{azureblue}{\textbf{Advanced:}} C, Hack, React, Python, \LaTeX.\\
 [1pt]
 & \textcolor{battleshipgrey}{\textbf{Medium}}: C++, Java, Bash, Awk, JavaScript, PHP, HTML, CSS.\\
 & \textbf{Basic}: R, SQL, Assembly, Lisp, Prolog.\\
@@ -149,6 +155,9 @@ In particular, I implemented new \emph{Python} scripts to better test and benchm
 
 \section{Publications}
 \begin{tabular}{p{2.5cm}p{13.2cm}}
+\small{TOCL 2021} & \textsc{Complete Abstractions for Checking Language Inclusion} \\
+& \textit{with Francesco Ranzato and Pierre Ganty}. \\
+[3pt]
 \small{MFCS 2020} & \textsc{A Quasiorder-based Perspective on Residual Automata} \\
 & \textit{with Elena Gutiérrez and Pierre Ganty}. \\
 [3pt]
@@ -166,13 +175,14 @@ In particular, I implemented new \emph{Python} scripts to better test and benchm
 \end{tabular}
 
 \section{Committees}
-As a PhD student I have contributed to the organization of the \href{http://atva2019.iis.sinica.edu.tw/organization/}{ATVA'19} and \href{https://conf.researchr.org/track/etaps-2019/tacas-2019-papers#Artifact-Evaluation}{TACAS'19} conferences as a member of the \emph{Artifact Evaluation Committee}. 
+As a PhD student I have contributed to the organization of the \href{http://atva2019.iis.sinica.edu.tw/organization/}{ATVA'19} and \href{https://conf.researchr.org/track/etaps-2019/tacas-2019-papers#Artifact-Evaluation}{TACAS'19} conferences as a member of the \emph{Artifact Evaluation Committee}.
 The goal of these committees is to check consistency and replicability of results presented in submitted papers as well as evaluating their completeness, documentation and ease of use.
 
 \section{Education}
 \begin{tabular}{p{2.5cm}p{13.2cm}}
-\small{2016 - Current} & \textsc{PhD in Software, Systems and Computing} \\
+\small{2016 - 2020} & \textsc{PhD in Software, Systems and Computing} \\
 & at \textbf{Universidad Politécnica de Madrid}\\
+& Graduated \emph{Cum Laude} \\
 [3pt]
 \small{2011 - 2016} & \textsc{Double degree at Computer Science and Mathematics}\\
 & at \textbf{Universidad Autónoma de Madrid} \\
